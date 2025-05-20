@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário e Seções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/form.jpg" title="ALGUM TEXTO" alt="imagem de um formulario">
+        <nav>
+            <ol>
+                <li><a href="#section1">Inicio</a></li>
+                <li><a href="#section2">Fotos</a></li>
+                <li><a href="#form">Contato</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section1">
+            <h1>Minha seção 01</h1>
+            <p hidden>Aqui é a seção 01!!</p>
+        </section>
+        <section id="section2">
+            <h1>Minha seção 02</h1>
+            <p>Aqui é a seção 02!!</p>
+        </section>
+
+        <section id="form">
+            <h1>Formulário</h1>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui!" required> <br><br>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" minlength="5"> <br><br> <label
+                        for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"> <br><br> <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha"><br><br> <label for="data_nascimento">Data de
+                        nascimento:</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento"> <br><br> <label
+                        for="cidade">Cidade:</label> <select name="cidade" id="cidade">
+                        <option value="">Selecione uma cidade</option>
+                        <option value="beberibe">Beberibe</option>
+                        <option value="fortaleza">Fortaleza</option>
+                        <option value="juazeiro">Juazeiro</option>
+                        <option value="pedra_branca">Pedra Branca</option>
+                    </select> <br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações do curso</legend>
+
+                    <label for="fs">Fullstack</label>
+                    <input type="radio" id="fs" name="curso" value="fullstack"> <br>
+
+                    <label for="cd">Ciência de dados</label> <input type="radio" id="cd" name="curso" value="cd">
+                    <br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações de disciplina</legend>
+
+                    <label for="html_disciplina">HTML</label> <input type="checkbox" id="html_disciplina"
+                        name="disciplinas[]" value="html"> <br> <label for="css_disciplina">CSS</label> <input
+                        type="checkbox" id="css_disciplina" name="disciplinas[]" value="css"> <br> <label
+                        for="java_disciplina">JAVA</label> <input type="checkbox" id="java_disciplina"
+                        name="disciplinas[]" value="java"> <br><br>
+                </fieldset>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </form>
+        </section>
+
+        <aside>
+            <h2>Aqui é um aside!!!</h2>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Aqui estão as informações da minha página</p>
+    </footer>
+</body>
+
+</html>

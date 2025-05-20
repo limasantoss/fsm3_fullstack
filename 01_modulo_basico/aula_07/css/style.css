@@ -1,0 +1,202 @@
+ /* Reset básico e fonte padrão */
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+     line-height: 1.6;
+     margin: 0;
+     padding: 0;
+     background-color: #f4f4f4;
+     color: #333;
+ }
+ img{
+    width: 100%;
+ }
+
+ /* Container principal para limitar a largura (opcional) */
+ .container {
+    border: 2px solid;
+     width: 80%;
+     margin: auto;
+     overflow: hidden;
+     /* Para conter floats, se houver */
+     padding: 0 20px;
+ }
+
+ /* Cabeçalho */
+ header {
+     background: #333;
+     color: #fff;
+     padding-top: 20px;
+     min-height: 90px;
+     border-bottom: #0779e4 3px solid;
+     text-align: center;
+     /* Centralizar imagem e nav */
+ }
+
+ header img {
+     margin-bottom: 10px;
+ }
+
+ header nav ol {
+     padding: 0;
+     list-style: none;
+     margin-top: 5px;
+ }
+
+ header nav ol li {
+     display: inline;
+     padding: 0 20px 0 20px;
+ }
+
+ header nav ol li a {
+     color: #fff;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 16px;
+ }
+
+ header nav ol li a:hover {
+     color: #0779e4;
+     font-weight: bold;
+ }
+
+ /* Conteúdo Principal */
+ main {
+     padding: 20px 0;
+     /* Espaçamento vertical */
+ }
+
+ section {
+     background: #fff;
+     padding: 20px;
+     margin-bottom: 20px;
+     border-radius: 5px;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+ }
+
+ section h1,
+ section h2 {
+     /* Títulos de seção e formulário */
+     color: #333;
+     border-bottom: 1px solid #eee;
+     padding-bottom: 10px;
+     margin-top: 0;
+ }
+
+ /* Formulário */
+ form {
+     margin-top: 15px;
+ }
+
+ fieldset {
+     border: 1px solid #ddd;
+     border-radius: 4px;
+     padding: 15px;
+     margin-bottom: 20px;
+ }
+
+ legend {
+     font-weight: bold;
+     color: #333;
+     padding: 0 10px;
+     /* Espaçamento ao redor da legenda */
+ }
+
+ label {
+     display: block;
+     /* Faz o label ocupar a linha toda */
+     margin-bottom: 8px;
+     font-weight: bold;
+ }
+
+ input[type="text"],
+ input[type="email"],
+ input[type="password"],
+ input[type="date"],
+ select,
+ textarea {
+     width: calc(100% - 22px);
+     /* Ajusta para padding e border */
+     padding: 10px;
+     margin-bottom: 15px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+     /* Inclui padding e border na largura total */
+ }
+
+ textarea {
+     min-height: 100px;
+ }
+
+ /* Estilo para radio e checkbox labels ficarem ao lado */
+ fieldset div {
+     /* Criar um div para agrupar radio/checkbox e label se precisar de layout complexo */
+     margin-bottom: 10px;
+ }
+
+ input[type="radio"],
+ input[type="checkbox"] {
+     margin-right: 5px;
+     vertical-align: middle;
+ }
+
+ /* Para alinhar o label com o radio/checkbox */
+ label[for="fs"],
+ label[for="cd"],
+ label[for="html_disciplina"],
+ label[for="css_disciplina"],
+ label[for="java_disciplina"] {
+     display: inline-block;
+     /* Permite que outros elementos fiquem ao lado */
+     font-weight: normal;
+     /* Labels de radio/checkbox geralmente não são bold */
+     margin-right: 15px;
+ }
+
+ input[type="submit"],
+ input[type="reset"] {
+     background: #5cb85c;
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 16px;
+     margin-right: 10px;
+ }
+
+ input[type="reset"] {
+     background: #d9534f;
+ }
+
+ input[type="submit"]:hover {
+     background: #4cae4c;
+ }
+
+ input[type="reset"]:hover {
+     background: #c9302c;
+ }
+
+ /* Aside */
+ aside {
+     background: #f9f9f9;
+     padding: 15px;
+     border-left: 3px solid #0779e4;
+     margin-bottom: 20px;
+     border-radius: 0 5px 5px 0;
+ }
+
+ aside h2 {
+     margin-top: 0;
+     color: #333;
+ }
+
+ /* Rodapé */
+ footer {
+     background: #333;
+     color: #fff;
+     text-align: center;
+     padding: 20px;
+     margin-top: 20px;
+     /* Espaço acima do rodapé */
+ }
